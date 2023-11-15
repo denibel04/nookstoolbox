@@ -17,7 +17,7 @@ module.exports = ({ env }) => ({
     'import-export-entries': {
     enabled: true,
     config: {
-        serverPublicHostname: 'http://localhost:1337/api',
+        serverPublicHostname: 'https://nookstoolbox-service.onrender.com',
         },
     },
 });
