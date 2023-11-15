@@ -10,9 +10,19 @@ module.exports = ({ env }) => ({
             },
             actionOptions: {
                 upload: {},
-                delete: {},
+                delete: {}, 
             },
         },
     },
     // ...
+    bulkoperator: {
+        enabled: true,
+        resolve: "strapi-bulk-operator",
+    },
+    'import-export-entries': {
+    enabled: true,
+    config: {
+        serverPublicHostname: 'http://localhost:1337/api',
+        },
+    },
 });
