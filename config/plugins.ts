@@ -14,11 +14,6 @@ module.exports = ({ env }) => ({
             },
         },
     },
-    // ...
-    bulkoperator: {
-        enabled: true,
-        resolve: "strapi-bulk-operator",
-    },
     'import-export-entries': {
     enabled: true,
     config: {
