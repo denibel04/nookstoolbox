@@ -103,6 +103,12 @@
         }
       },
       "type": "boolean"
+    },
+    "islands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::island.island",
+      "mappedBy": "villagers"
     }
   }
 }
