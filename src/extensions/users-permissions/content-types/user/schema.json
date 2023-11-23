@@ -65,12 +65,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "extended_user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::extended-user.extended-user",
-      "mappedBy": "user"
     }
   }
 }

@@ -368,6 +368,7 @@ export interface ApiExtendedUserExtendedUser extends Schema.CollectionType {
     singularName: 'extended-user';
     pluralName: 'extended-users';
     displayName: 'Extended_user';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -845,11 +846,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'plugin::users-permissions.user',
       'manyToOne',
       'plugin::users-permissions.role'
-    >;
-    extended_user: Attribute.Relation<
-      'plugin::users-permissions.user',
-      'oneToOne',
-      'api::extended-user.extended-user'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

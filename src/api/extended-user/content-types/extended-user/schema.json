@@ -4,7 +4,8 @@
   "info": {
     "singularName": "extended-user",
     "pluralName": "extended-users",
-    "displayName": "Extended_user"
+    "displayName": "Extended_user",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -14,8 +15,7 @@
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "extended_user"
+      "target": "plugin::users-permissions.user"
     },
     "display_name": {
       "type": "string"
