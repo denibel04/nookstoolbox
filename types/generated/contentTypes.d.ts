@@ -380,7 +380,7 @@ export interface ApiExtendedUserExtendedUser extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     display_name: Attribute.String;
-    user_id: Attribute.UID & Attribute.Required;
+    user_id: Attribute.Integer & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

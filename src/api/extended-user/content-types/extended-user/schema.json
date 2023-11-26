@@ -21,8 +21,9 @@
       "type": "string"
     },
     "user_id": {
-      "type": "uid",
-      "required": true
+      "unique": true,
+      "required": true,
+      "type": "integer"
     }
   }
 }
