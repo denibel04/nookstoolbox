@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Type": {
+    "type": {
       "type": "string",
       "required": true
     },
@@ -25,7 +25,7 @@
     "amountTotal": {
       "type": "biginteger"
     },
-    "Completed": {
+    "completed": {
       "type": "boolean",
       "default": false,
       "required": true
