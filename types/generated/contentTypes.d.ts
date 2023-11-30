@@ -777,7 +777,7 @@ export interface ApiLoanLoan extends Schema.CollectionType {
     completed: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
-    Title: Attribute.String;
+    title: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::loan.loan', 'oneToOne', 'admin::user'> &
