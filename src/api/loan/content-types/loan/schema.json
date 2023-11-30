@@ -29,6 +29,9 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "Title": {
+      "type": "string"
     }
   }
 }
