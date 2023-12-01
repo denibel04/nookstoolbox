@@ -24,6 +24,11 @@
       "unique": true,
       "required": true,
       "type": "integer"
+    },
+    "island": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::island.island"
     }
   }
 }

@@ -696,6 +696,11 @@ export interface ApiExtendedUserExtendedUser extends Schema.CollectionType {
     >;
     display_name: Attribute.String;
     user_id: Attribute.Integer & Attribute.Required & Attribute.Unique;
+    island: Attribute.Relation<
+      'api::extended-user.extended-user',
+      'oneToOne',
+      'api::island.island'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -735,6 +740,11 @@ export interface ApiIslandIsland extends Schema.CollectionType {
       'api::island.island',
       'manyToMany',
       'api::villager.villager'
+    >;
+    loans: Attribute.Relation<
+      'api::island.island',
+      'oneToMany',
+      'api::loan.loan'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
