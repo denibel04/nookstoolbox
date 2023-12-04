@@ -33,11 +33,6 @@
       "relation": "manyToMany",
       "target": "api::villager.villager",
       "inversedBy": "islands"
-    },
-    "loans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::loan.loan"
     }
   }
 }

@@ -741,11 +741,6 @@ export interface ApiIslandIsland extends Schema.CollectionType {
       'manyToMany',
       'api::villager.villager'
     >;
-    loans: Attribute.Relation<
-      'api::island.island',
-      'oneToMany',
-      'api::loan.loan'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -788,6 +783,11 @@ export interface ApiLoanLoan extends Schema.CollectionType {
       Attribute.Required &
       Attribute.DefaultTo<false>;
     title: Attribute.String & Attribute.Required;
+    island: Attribute.Relation<
+      'api::loan.loan',
+      'oneToOne',
+      'api::island.island'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::loan.loan', 'oneToOne', 'admin::user'> &

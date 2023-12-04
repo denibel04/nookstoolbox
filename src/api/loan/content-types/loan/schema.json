@@ -33,6 +33,11 @@
     "title": {
       "type": "string",
       "required": true
+    },
+    "island": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::island.island"
     }
   }
 }
